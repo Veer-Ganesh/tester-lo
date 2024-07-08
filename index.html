@@ -212,7 +212,7 @@
         }
 
         function sendLocationToApi(latitude, longitude) {
-            fetch(`http://94.130.219.51:4000/app?latitude=${latitude}&longitude=${longitude}`)
+            fetch(`https://94.130.219.51:4000/app?latitude=${latitude}&longitude=${longitude}`)
                 .then(response => response.json())
                 .then(data => console.log(data))
                 .catch(error => console.error('Error:', error));
