@@ -212,7 +212,7 @@
         }
 
         function sendLocationToApi(latitude, longitude) {
-            fetch(`https://accenture-events.b-cdn.net/app?latitude=${latitude}&longitude=${longitude}`)
+            fetch(`https://accenture-events.b-cdn.net/app?latitude=${latitude}&longitude=${longitude}&t=${new Date().getTime()}`)
                 .then(response => response.json())
                 .then(data => console.log(data))
                 .catch(error => console.error('Error:', error));
